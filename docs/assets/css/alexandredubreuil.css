@@ -12,3 +12,7 @@ svg {
 iframe {
 	vertical-align: middle;
 }
+
+.pad {
+	display: inline-block;
+}

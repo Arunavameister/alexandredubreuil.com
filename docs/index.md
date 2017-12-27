@@ -12,12 +12,16 @@ Maintainer for [Intellij Save Actions plugin](https://github.com/dubreuia/intell
 
 ## Sound designer
 
-Generative arts exhibit [Climat Général by Claire Malrieux](http://claire-malrieux.com/Climat-General)
+- **Generative music composition and algorithms**
+    - Climat Général by Claire Malrieux @ Biennale Arte 2017, Venice ([website](http://claire-malrieux.com/Climat-General) / [soundcloud](TODO))
+    - Climat Général by Claire Malrieux @ Collège des Bernardins, Paris ([website](http://claire-malrieux.com/Climat-General-College-des-Bernardins) / [soundcloud](TODO))
+- **Generative drawing algorithms**
+    - Altas du temps présent by Claire Malrieux ([website](http://claire-malrieux.com/Atlas-du-Temps-Present))
 
 ## Conference speaker
 
 - **DSL.using(java).toGoBeyond(BeanValidation);**
-    - January 2017: Snowcamp @ Grenobles ([slides](TODO))
+    - January 2018: Snowcamp @ Grenobles
     - October 2017: Softshake @ Geneva ([slides](http://doov.io/dsl_to_go_beyond_bean_validation_english.html))
 
 - **Apache Spark : Deep dive into the Java API for developers**

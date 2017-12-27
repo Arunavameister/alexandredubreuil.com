@@ -1,0 +1,14 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+svg {
+	color: #222;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+iframe {
+	vertical-align: middle;
+}

@@ -12,7 +12,8 @@ Spoke at [Devoxx Poland (en)](https://www.youtube.com/watch?v=cr3wCNwKQWY), [Bre
 
 ## Open-source maintainer
 
-Maintainer for [Intellij save-actions plugin](https://github.com/dubreuia/intellij-plugin-save-actions) and [Domain Object Oriented Validation (dOOv)](https://github.com/lesfurets/dOOv).
+Maintainer for [Intellij save-actions plugin](https://github.com/dubreuia/intellij-plugin-save-actions) <a class="github-button" href="https://github.com/dubreuia/intellij-plugin-save-actions" data-icon="octicon-star" data-show-count="true" aria-label="Star dubreuia/intellij-plugin-save-actions on GitHub">Star</a> and [Domain Object Oriented Validation (dOOv)](https://github.com/lesfurets/dOOv) <a class="github-button" href="https://github.com/lesfurets/dOOv" data-icon="octicon-star" data-show-count="true" aria-label="Star lesfurets/dOOv on GitHub">Star</a>.
+
 
 ## Sound designer
 

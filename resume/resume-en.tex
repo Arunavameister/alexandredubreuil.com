@@ -1,0 +1,450 @@
+\documentclass[a4paper]{article}
+
+\usepackage{resume}
+
+\newcommand{\cvname}{Alexandre DuBreuil}
+\newcommand{\cvtitle}{Java Tech Lead}
+\newcommand{\cvlocation}{Paris, France~/~Montreal, Canada}
+\newcommand{\cvtelephone}{+33 (0)6 27 71 46 75}
+\newcommand{\cvmail}{dubreuil.alex@gmail.com}
+\newcommand{\cvgithub}{github.com/dubreuia}
+\newcommand{\cvtwitter}{twitter.com/dubreuia}
+\newcommand{\cvlinkedin}{linkedin.com/in/alexandredubreuil}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+%                                  Document                                  %
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+\begin{document}%
+
+                   % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+                   %               Sommaire                %
+                   % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+
+\cvsection{Summary}
+
+\begin{cvsummary}%
+  \cvlang{Java} Tech Lead with 6 years of professional experience, both as a
+  technical leader in a small agile web development team and as a consultant on
+  a large scale Java web application. Excellent theoretical knowledge and
+  strong problem solving skills. Canadian with a French working visa, bilingual
+  French and English and open for job relocation.
+&
+  \begin{cvsummarytech}%
+    \cvlangprimary{Java},
+    \cvlangsecondary{Python},
+    \cvlangsecondary{Bash},
+    \cvlangsecondary{GWT},
+    \cvlang{JUnit},
+    \cvlang{Mockito},
+    \cvlang{Selenium}
+  \end{cvsummarytech}
+  \vspace{1em}
+  \begin{cvsummarytech}%
+    \cvlangprimary{Kanban},
+    \cvlangsecondary{Agile},
+    \cvlangsecondary{DevOps},
+    \cvlangsecondary{TTD},
+    \cvlang{Lean startup}
+  \end{cvsummarytech}
+  \vspace{1em}
+  \begin{cvsummarytech}%
+    \cvlangprimary{git},
+    \cvlangsecondary{Linux},
+    \cvlangsecondary{vim},
+    \cvlangsecondary{Intellij},
+    \cvlang{Docker}
+  \end{cvsummarytech}
+\end{cvsummary}
+
+                   % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+                   %              Experience               %
+                   % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+
+\cvsection{Experience}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+%               LESFURETS               %
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+
+\cvexperiencetitle
+  {Java Tech Lead}
+  {January 2014 - today}
+  {1.5 year}
+  {LesFurets.com}
+  {Paris, France}
+
+\begin{cvexperience}%
+  Technical leader of development, architecture, code quality and team
+  mentoring on a Agile team of 5 developers, the panel team. The website
+  located at \cvhttps{www.lesfurets.com} is a Java application of
+  500 000 lines of code, for price comparison in the insurance business, with
+  more than 50 insurers. It consists of two main parts, a \cvlang{GWT}
+  frontend and a backend used to contact insurers via web services (developed
+  by the panel team).
+
+  \begin{cvexperiencedescription}%
+    \item Team management with the Kanban methodology, visual management, daily
+      stand ups, weekly 1on1 with each team members, daily delivery to
+      production and a strong DevOps culture.
+
+    \item Team mentoring on code review and code quality, as well as pair
+      programming.
+
+    \item Promotion of our DevOps culture through meetups and conferences (see
+      the conferences section).
+
+    \item Development of tooling for the development team: a platform for
+      environment creation, with a 1 click deploy on \cvlang{Docker} container
+      ; a code generation tool to ease insurer integration ; etc.
+
+    \item Development of multiple web service connectors on various protocols,
+      mainly using \cvlang{CXF} and \cvlang{WSDL}.
+
+    \item Frontend and backend development and architecture for main features
+      of the website, such an online payment system.
+  \end{cvexperiencedescription}
+
+  \begin{cvexperiencetech}[Technologies]%
+    \cvlang{Java},
+    \cvlang{GWT},
+    \cvlang{Docker},
+    \cvlang{CXF},
+    \cvlang{WSDL},
+    \cvlang{Intellij},
+  \end{cvexperiencetech}
+  \begin{cvexperiencetech}[Culture]%
+    \cvlang{Kanban},
+    \cvlang{DevOps},
+    \cvlang{Continuous delivery}
+  \end{cvexperiencetech}
+\end{cvexperience}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+%                TELECOM                %
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+
+\cvexperiencetitle
+{Research Engineer}
+{September 2013 - Decembre 2013}
+{4 months}
+{University Telecom ParisTech}
+{Paris, France}
+
+\begin{cvexperience}%
+  Research engineer on the subject of type safety in web service orchestration
+  with the \cvlang{Orc} orchestration language.
+
+  \begin{cvexperiencetech}[Technologies]%
+    \cvlang{Orc},
+    \cvlang{Scala},
+    \cvlang{WSDL}
+  \end{cvexperiencetech}
+\end{cvexperience}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+%                  CGI                  %
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+
+\cvexperiencetitle
+{Java EE Consultant}
+{January 2010 - August 2013}
+{3.5 years}
+{CGI France}
+{Paris, France}
+
+\begin{cvexperience}%
+  \cvlang{Java EE} consultant on a large scale front office and back office
+  Java application, efluid, in the energy business (20,000 classes, 3,000,000
+  lines of code). Responsible for the functional documentation, technical
+  documentation, development, unit testing, delivery and formation.
+
+  \begin{cvexperiencedescription}%
+    \item Development of algorithms targeted for the energy market, such as
+      price optimisation and energy curve manipulation. The algorithms where
+      required to handle large datasets (1,000+ curves, millions of points)
+      efficiently, in terms of memory and CPU usage. The implementations were
+      multi-threaded. Those algorithms play a central role in the data handling
+      of the application.
+
+    \item Development of a \cvlang{cron}-like Java scheduler to defer heavy
+      computations to other machines. The scheduler is available thought the
+      Java \cvlang{RMI} interface and multiple synchronized instances can be
+      started on demand. The scheduler is a central component in all
+      \emph{efluid} modules for deferred executions.
+
+    \item Design and development of a full \cvlang{AJAX}, \cvlang{Javascript},
+      \cvlang{jQuery} and \cvlang{jQPlot} curve visualisation component, for
+      price and energy curves. The component is used extensively by traders and
+      salesmen to visualise price and energy history, and apply algorithms or
+      operations on them. The component handles large datasets gracefully, by
+      optimising memory consumption.
+    
+    \item Responsible for the design and maintenance of parts of the CGI Java
+      EE Framework, especially for the generic algorithms module, the
+      \cvlang{Javascript} and \cvlang{jQuery} taglibs and the Java scheduler.
+      Support for the IT and delivery team to plan and deliver new versions of
+      the framework.
+
+    \item Member of CGI internal committees, such as the \emph{Technical
+      Committee}, which decides and advises on solutions to technical problems
+      ; and the \emph{Continuous Integration Committee}, which designs the
+      application build process with \cvlang{Hudson}, the version tree with
+      \cvlang{git} and promotes quality indicators and metrics with
+      \cvlang{Sonar}.
+
+    \item Technical referent, trainer and course writer for the development
+      team, on subjects like \emph{Java Good Practices}, \emph{Unit tests with
+      JUnit}, \emph{Delivery Processes with Maven and git} and \emph{Javascript
+      and jQuery}.
+
+    \item Team support for \cvlang{Linux} subjects such as system
+      administration and \cvlang{Bash} scripts.
+  \end{cvexperiencedescription}
+
+  \begin{cvexperiencetech}[Technologies]%
+    \cvlang{Java EE},
+    \cvlang{JSP},
+    \cvlang{Maven},
+    \cvlang{JUnit},
+    \cvlang{SQL},
+    \cvlang{Javascript},
+    \cvlang{jQuery},
+    \cvlang{jQPlot},
+    \cvlang{Eclipse},
+    \cvlang{Intellij},
+    \cvlang{Hudson},
+    \cvlang{Sonar}
+  \end{cvexperiencetech}
+  \begin{cvexperiencetech}[Culture]%
+    \cvlang{Continuous integration}
+  \end{cvexperiencetech}
+\end{cvexperience}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+%                 CHUM                  %
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+
+\cvexperiencetitle
+{Java Developer {\small (intern)}}
+{May 2009 - August 2009}
+{4 months}
+{University of Montreal Hospital (CHUM)}
+{Montreal, Quebec}
+
+\begin{cvexperience}%
+  Java developer for a client server patient diagnosis application,
+  \textbf{SPR}. Database design, REST API design, development and server
+  deployment.
+
+  \begin{cvexperiencetech}[Technologies]%
+    \cvlang{Java},
+    \cvlang{GWT},
+    \cvlang{REST},
+    \cvlang{Perl},
+    \cvlang{Catalyst},
+    \cvlang{Eclipse},
+    \cvlang{Bash},
+    \cvlang{Vim},
+    \cvlang{UNIX}
+  \end{cvexperiencetech}
+\end{cvexperience}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+%                  CGI                  %
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+
+\cvexperiencetitle
+{Java Consultant {\small (intern)}}
+{September 2008 - December 2008}
+{4 months}
+{CGI Montreal}
+{Montreal, Quebec}
+
+\begin{cvexperience}%
+  Java developer for an internal project tracking application,
+  \textbf{Radar}, on Hibernate and JBoss Seam.
+
+  \begin{cvexperiencetech}%
+    \cvlang{Java EE},
+    \cvlang{Hibernate},
+    \cvlang{JBoss Seam},
+    \cvlang{Eclipse},
+    \cvlang{Bash},
+    \cvlang{Vim},
+    \cvlang{Windows}
+  \end{cvexperiencetech}
+\end{cvexperience}
+
+                   % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+                   %               Education               %
+                   % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+
+\cvsection{Education}
+
+\cvexperiencetitle
+{Pierre and Marie Curie University (Paris VI)}
+{September 2009 - January 2010}
+{4 months}
+{Computer science master - International exchange - CREPUQ}
+{Paris, France}
+
+\vspace{1em}
+
+\cvexperiencetitle
+{University of Montreal}
+{September 2007 - January  2011}
+{4 years}
+{Computer science baccalaureate}
+{Montreal, Quebec}
+
+\vspace{1em}
+
+\cvexperiencetitle
+{Jean-de-Brebeuf College}
+{September 2005 - June 2007}
+{2 years}
+{DEC in science, letters and arts}
+{Montreal, Quebec}
+
+\vspace{1em}
+
+                   % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+                   %               Conferences             %
+                   % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+
+\cvsection{Conferences}
+
+\cvexperiencetitle
+  {Pair programming at LesFurets.com}
+  {}
+  {June 2015}
+  {NWX Summer Festival}
+  {Rouen, France}
+
+\begin{cvexperience}%
+  Technical conference on pair programming, on why do it and how to do it well.
+
+  \begin{cvexperiencetech}[Tags]%
+    \cvlang{Pair programming},
+    \cvlang{Software craftsmanship}
+  \end{cvexperiencetech}
+\end{cvexperience}
+
+\cvexperiencetitle
+  {Continuous Delivery at LesFurets.com}
+  {}
+  {September 2014}
+  {AgileTour Rennes}
+  {Rennes, France}
+
+\begin{cvexperience}%
+  Technical conference on our delivery process at LesFurets.com, which
+  describes our usage of feature branching in \cvlang{git}, our custom merge
+  tool, \cvlang{git-octopus}, and how we use these technologies to ship to
+  production every day.
+
+  \begin{cvexperiencetech}[Tags]%
+    \cvlang{git},
+    \cvlang{DevOps},
+    \cvlang{Continuous delivery}
+  \end{cvexperiencetech}
+\end{cvexperience}
+
+                   % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+                   %                Projets                %
+                   % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+
+\cvsection{Projects}
+
+\cvexperiencetitle
+{Odei / Ximista - Live video generation}
+{February 2015 - August 2015}
+{6 months}
+{Baleapop festival}
+{Saint-Jean de Luz, France}
+
+\begin{cvexperience}%
+  Development of a video generation software for live musical perfomance,
+  Ximista, which generate images based on structured and unstructured sound
+  data, for the Baleapop festival, in August. The project is developped with
+  and for Odei, an electro-jazz improvisation band. The product works in
+  \cvlang{Touch Designer} and is written in \cvlang{Python}. Trailer available
+  there: \cvhttps{vimeo.com/130523273}.
+
+  \begin{cvexperiencetech}[Technologies]%
+    \cvlang{Touch Designer},
+    \cvlang{Python}
+  \end{cvexperiencetech}
+\end{cvexperience}
+
+\cvexperiencetitle
+{Intellij Save Action plugin}
+{January 2015}
+{1 day}
+{\cvhttps{github.com/dubreuia/intellij-plugin-save-actions}}
+{}
+
+\begin{cvexperience}%
+  Development of a custom \cvlang{Intellij} plugin to add save actions.
+
+  \begin{cvexperiencetech}[Technologies]%
+    \cvlang{Java},
+    \cvlang{Intellij}
+  \end{cvexperiencetech}
+\end{cvexperience}
+
+\cvexperiencetitle
+{Atlas du temps present}
+{September 2013 - January 2014}
+{3 months}
+{Exhibit at the Arts Decoratifs Museum}
+{Paris, France}
+
+\begin{cvexperience}%
+  Exhibit at the Museum of Decorative Arts in Paris, on the composition of
+  generative random drawings with Photoshop and Javascript. The project was
+  done in collaboration with the artist Claire Malrieux. A website of daily
+  automatically generated drawing is available at
+  \cvhttp{atlas-du-temps-présent.fr}.
+
+  \begin{cvexperiencetech}[Technologies]%
+    \cvlang{Javascript},
+    \cvlang{Photoshop}
+  \end{cvexperiencetech}
+\end{cvexperience}
+
+\cvexperiencetitle
+{Interactive 3D exhibit}
+{janvier 2013 - mai 2013}
+{4 months}
+{Exposition at the Arts Forains Museum}
+{Enghien-les-Bains, France}
+
+\begin{cvexperience}%
+  Interactive exhibit at Enghien-les-Bains for the account of the Museum of
+  Arts Forains of Paris, which consists of the exploration of the 3D model of a
+  landscape with an iPad as a controller. The development was done in
+  \cvlang{Unity} in \cvlang{C\#}. Demo at \href
+  {http://www.behance.net/gallery/PAESINE-TRIPPER/12053619}
+  {www.behance.net/gallery/paesine}.
+
+  \begin{cvexperiencetech}[Technologies]%
+    \cvlang{C\#},
+    \cvlang{OSC},
+    \cvlang{Unity}
+  \end{cvexperiencetech}
+\end{cvexperience}
+
+                   % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+                   %                Interests              %
+                   % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+
+\cvsection{Interests}
+
+\begin{description}%
+  \item[sports] cycling, squash
+  \item[music] DJing, synthesizers, music production
+  \item[geek] mechanical keyboards
+\end{description}
+
+\end{document}

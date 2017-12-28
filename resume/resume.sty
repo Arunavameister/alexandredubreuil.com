@@ -1,0 +1,110 @@
+% Packages %
+\usepackage[a4paper]{geometry}
+\usepackage[cm]{fullpage}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{marvosym}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{keystroke}
+\usepackage[normalem]{ulem}
+\usepackage{ifthen}
+\usepackage{lastpage}
+
+%\renewcommand{\familydefault}{\sfdefault}
+%\renewcommand{\familydefault}{\ttdefault}
+
+% Environnements %
+\newenvironment{cvsummary}%
+  {\noindent\begin{tabular*}{\textwidth}%
+    {@{}p{0.58\textwidth}p{0.395\textwidth}@{}}}%
+  {\end{tabular*}}%
+\newenvironment{cvexperience}%
+  {\noindent\begin{multicols}{2}\noindent}%
+  {\end{multicols}}%
+\newenvironment{cvexperiencefull}%
+  {\noindent}%
+  {}%
+\newenvironment{cvexperiencesimple}%
+  {\noindent\begin{tabular*}{\textwidth}{@{}p{0.48\textwidth}@{}}}%
+  {\end{tabular*}}%
+\newenvironment{cvexperiencedescription}%
+  {\noindent\begin{itemize}[leftmargin=1em]}%
+  {\end{itemize}}%
+  \newenvironment{cvexperiencetech}[1][]%
+  {\noindent\begin{description}\item[\textnormal{\emph{#1}} --]}%
+  {\end{description}}%
+\newenvironment{cvsummarytech}%
+  {\noindent\par}%
+  {}%
+\newenvironment{cvsummarykeywordsbyprofiency}%
+  {\noindent\begin{flushright}\begin{tabular}{@{}rrrr@{}}}%
+  {\end{tabular}\end{flushright}}%
+
+% Commands %
+\newcommand{\cvlangtime}[2]{\texttt{#1} {\makebox{\small\emph{#2}}}}
+\newcommand{\cvlang}[1]{\mbox{\textsf{#1}}}
+\newcommand{\cvlangprimary}[1]{\mbox{\Large\textsf{#1}}}
+\newcommand{\cvlangsecondary}[1]{\mbox{\large\textsf{#1}}}
+\newcommand{\cvexperiencetitle}[5]{%
+  \subsection*{#1\hfill{\small\emph{#2}}\ /\ #3}
+  \subsubsection*{#4 \hfill #5}}
+%\newcommand{\cvsection}[1]{\section*{\dashuline{#1}}}
+\newcommand{\cvsection}[1]{\section*{\dotuline{#1}}}
+%\newcommand{\cvsection}[1]{\section*{\uwave{#1}}}
+\newcommand{\cvhttp}[1]{\href{http://#1}{#1}}
+\newcommand{\cvhttps}[1]{\href{https://#1}{#1}}
+\newcommand{\cvsummarykeywordsbyprofiencyheader}[4]{
+  \multicolumn{1}{@{}r@{}}{\textbf{#1}}&
+  \multicolumn{1}{@{}r@{}}{\textbf{#2}}&
+  \multicolumn{1}{@{}r@{}}{\textbf{#3}}&
+  \multicolumn{1}{@{}r@{}}{\textbf{#4}}\\}
+\newcommand{\cvsummarykeywordsbyprofiencyitem}[4]{\cvlang{#1}&\cvlang{#2}&\cvlang{#3}&\cvlang{#4}\\}
+
+% Modify sizes %
+%\setlength{\voffset}{-50pt}
+\setlength{\headheight}{45pt}
+\setlength{\headsep}{20pt}
+\setlength{\multicolsep}{0pt}
+\setlength{\columnsep}{0.6cm}
+\setlength{\textheight}{0.92\textheight}
+
+% Heander and footers %
+\pagestyle{fancy}
+\lhead{%
+  {\Large
+  {\Huge{\textbf{\cvname}}}\\
+  {\Large{\textbf{\cvtitle}}}\\
+  {\small\textbf{\textcolor{darkgray}{\cvlocation}}}}}
+\rhead{%
+  \textbf{{\Large\Telefon}\ \ \cvtelephone}\\
+  \textbf{{\Large\Letter}\ \ \href{mailto:\cvmail}{\cvmail}}\\
+  {\Large\ComputerMouse}\ \ \cvhttps{\cvgithub}\\
+  {\Large\Keyboard}\ \ \cvhttps{\cvtwitter}\\
+  {\Large\Printer}\ \ \cvhttps{\cvlinkedin}}
+\lfoot{\texttt{\thepage\ / \pageref*{LastPage}}}
+\cfoot{}
+\rfoot{\ifthenelse{\value{page}=3}{\Esc}{\PgDown}}
+%\renewcommand{\footrulewidth}{0.4pt}
+
+% Reference setup %
+\hypersetup{
+    bookmarks=false,
+    pdftoolbar=false,
+    pdfmenubar=false,
+    pdffitwindow=false,
+    pdfstartview={FitH},
+    pdftitle={CV - Alexandre DuBreuil},
+    pdfauthor={Alexandre DuBreuil},
+    pdfsubject={CV},
+    pdfcreator={Alexandre DuBreuil},
+    pdfproducer={Alexandre DuBreuil},
+    pdfkeywords={Java} {Python} {Agile} {git},
+    pdfnewwindow=true,
+    colorlinks=true,
+    linkcolor=red,
+    citecolor=green,
+    filecolor=magenta,
+    urlcolor=blue
+}
